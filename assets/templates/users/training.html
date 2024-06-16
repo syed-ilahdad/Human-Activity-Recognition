@@ -1,0 +1,34 @@
+{% extends 'users/userbase.html' %}
+{% block title %}{% endblock %}
+{% block admin_home %}active{% endblock %}
+
+{% block content %}
+    <style>
+
+        .jumbotron {
+            margin-top: 20%;
+            height: 450px;
+            background: #fff;
+        }
+    </style>
+    <center>
+        <section id="main" class="align-items-center">
+            <div class="jumbotron">
+
+                <div class="col-md-12">
+                    <table>
+                        <tr>
+                            <th>Accuracy : </th>
+                            <td>{{acc}}</td>
+                        </tr>
+                        <tr>
+                            <th>Loss : </th>
+                            <td>{{loss}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </center>
+
+{% endblock %}
